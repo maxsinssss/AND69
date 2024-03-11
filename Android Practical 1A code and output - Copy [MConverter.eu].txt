@@ -1,0 +1,122 @@
+﻿Practical No: 1-A
+Title: Kotlin Demonstration
+1A] code: positive or negative
+fun main(){
+val number = -10
+if(number > 0)
+{
+	print("POSITIVE NUMBER")
+}
+else{
+	print("NEGATIVE NUMBER.")
+}
+}
+output:
+
+1b] code: even odd
+fun main(){
+val number = 21
+if(number %2==0)
+{
+	print("EVEN NUMBER")
+}
+else{
+	print("ODD NUMBER.")
+}
+output:
+
+1c] code: max value
+fun main(){
+val a = -9
+val b = -11
+val max = if(a>b){
+println("$a is larger than $b")
+println("Max variable holds value of a.")
+}
+else{
+println("$b is larger than $a")
+println("Max variable holds value of b.")
+}
+println("max = $max")
+}
+output:
+
+1d]code: greater value
+fun main(){
+val n1 = 50
+val n2 = 25
+val n3 = -5
+val max = if(n1>n2) {
+if (n1>n3)
+n1
+else
+n3
+} else{
+if (n2>n3)
+n2
+else
+n3
+}
+println("max = $max")
+}
+output:
+
+1e] code: to check days
+fun main(){
+val day = 4
+val result = when(day){
+1->"Monday"
+2->"Tueday"
+3->"Wednesday"
+4->"Thursday"
+5->"Friday"
+6->"Satday"
+7->"Sunday"
+else->"Invalid Day."
+}
+println(result)
+}
+output:
+
+1f] code: to check operator
+fun main(){
+val a = 25
+val b = 5
+println("Enter operator either +,-,* or /")
+val operator = readLine()
+val result = when(operator) {
+"+" -> a+b
+"-" -> a-b
+"*" -> a*b
+"/" -> a/b
+else -> "$operator operator is an invalid operator."
+}
+println("result = $result")
+}
+output:
+
+1g]  demonstaration of "do-while"
+code:
+fun main() {
+var sum: Int = 0
+var input: String
+do{
+print("Enter an Integer: ")
+input = readLine()!!
+sum +=input.toInt()
+} while(input!="0")
+println("sum = $sum")
+}
+output:
+
+
+
+
+
+
+
+
+
+
+
+
