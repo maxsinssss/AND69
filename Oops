@@ -1,0 +1,22 @@
+class Lamp {
+ 
+ private var isOn = false
+ 
+ fun turnOn() {
+ isOn = true
+ }
+ 
+ fun turnOff() {
+ isOn = false
+ }
+ fun displayLightStatus() {
+ if (isOn == true)
+ println("lamp is on.")
+else
+ println("lamp is off.")
+ }
+}
+fun main() {
+ val lamp = Lamp()
+ lamp.displayLightStatus()
+}
